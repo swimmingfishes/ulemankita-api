@@ -1,0 +1,20 @@
+info:
+  name: Get One User copy
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{BASE_URL}}/users/:id"
+  params:
+    - name: id
+      value: 6044790b-daa7-4298-9877-3649b7b4788f
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
