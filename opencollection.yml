@@ -2,6 +2,7 @@ opencollection: 1.0.0
 
 info:
   name: Uleman
+  version: v0.0.1.b
 config:
   proxy:
     inherit: true
@@ -19,3 +20,7 @@ extensions:
     ignore:
       - node_modules
       - .git
+    presets:
+      request:
+        type: http
+      defaultEnvironment: DEV
