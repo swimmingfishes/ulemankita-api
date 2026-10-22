@@ -5,16 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{BASE_URL}}/orders"
+  url: "{{BASE_URL}}/admin/orders"
   body:
     type: json
-    data: |
+    data: |-
       {
-        "shopeeOrderId": "SPX-2026-0012",
-        "userId": "59bf50e2-6418-46e8-b05f-e046a10ff15f",
-        "formToken": "token-rahasia-uni2k-123",
-        "formExpiresAt": "2026-10-25T00:00:00.000Z",
-        "status": "awaiting_form"
+          "shopeeOrderId":"6373318QJHGDK"
       }
   auth: inherit
 
