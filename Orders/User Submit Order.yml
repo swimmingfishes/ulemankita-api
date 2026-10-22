@@ -1,0 +1,49 @@
+info:
+  name: User Submit Order
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/orders/qTFZAI0_xEO_wM_-JJzjY/submit"
+  body:
+    type: json
+    data: |-
+      {
+        "account": {
+          "email": "nando@gmail.com",
+          "phone": "{{$randomPhoneNumber}}",
+          "name": "{{$randomFullName}}",
+          "password": "password123"
+        },
+        "wedding": {
+          "slug": "{{$randomBsNoun}}",
+          "weddingDate": "2026-12-20T09:00:00+07:00",
+          "brideName": "{{$randomFullName}}",
+          "groomName": "{{$randomFullName}}",
+          "brideFather": "{{$randomFullName}}",
+          "brideMother": "{{$randomFullName}}",
+          "groomFather": "{{$randomFullName}}",
+          "groomMother": "{{$randomFullName}}",
+          "brideInstagram": "{{$randomUserName}}",
+          "groomInstagram": "{{$randomUserName}}",
+          "songTitle": "Perfect",
+          "songUrl": "https://example.com/perfect.mp3",
+          "street": "Jl. Melati No. 10",
+          "village": "Sekaran",
+          "district": "Gunungpati",
+          "city": "Semarang",
+          "province": "Jawa Tengah",
+          "startTime": "2026-12-20T09:00:00+07:00",
+          "endTime": "2026-12-20T13:00:00+07:00",
+          "timezone": "Asia/Jakarta"
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
