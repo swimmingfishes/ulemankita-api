@@ -1,17 +1,19 @@
 info:
-  name: Login User
+  name: Register User
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{BASE_URL}}/auth/login"
+  url: "{{BASE_URL}}/admin/auth/register"
   body:
     type: json
     data: |-
       {
-        "email": "nando@gmail.com",
-        "password": "password123"
+        "email": "{{$randomEmail}}",
+        "phone": "{{$randomPhoneNumber}}",
+        "name": "{{$randomFullName}}",
+        "password": "password"
       }
   auth: inherit
 
