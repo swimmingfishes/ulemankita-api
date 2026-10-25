@@ -1,0 +1,20 @@
+info:
+  name: Get One ID copy
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{BASE_URL}}/admin/orders/:id"
+  params:
+    - name: id
+      value: 3cf5927b-6c97-46c1-9130-62cd8227c21c
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

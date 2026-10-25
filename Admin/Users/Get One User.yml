@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/users/:id"
+  url: "{{BASE_URL}}/admin/users/:id"
   params:
     - name: id
       value: f11fa4dc-b39f-4324-a0c1-69cfe28ba111

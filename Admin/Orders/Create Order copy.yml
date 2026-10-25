@@ -1,0 +1,30 @@
+info:
+  name: Create Order copy
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/admin/orders/:id"
+  params:
+    - name: id
+      value: c657d115-bf77-4a9b-90d4-82723ba01ca3
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+          "shopeeOrderId":"55744ddd18QJHYI",
+          "userId":"ce6f1a64-a398-40dd-8c7d-ada67b68ee29",
+          "formToken":"{{$randomBitcoin}}",
+          "formExpiresAt":"2026-10-28T00:00:00.000Z",
+          "status":"expired"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
