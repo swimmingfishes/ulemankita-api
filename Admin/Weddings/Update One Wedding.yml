@@ -1,0 +1,52 @@
+info:
+  name: Update One Wedding
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/admin/weddings/:id"
+  params:
+    - name: id
+      value: 65d88ad2-c2b7-4b57-aa21-7b94ad1859c0
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "weddingDate": "2026-12-20T09:00:00+07:00",
+        "orderId": "45f4ee69-5462-45b4-b8a4-4c8821582393",
+        "contactPhone": "{{$randomPhoneNumber}}",
+        "brideName": "{{$randomFullName}}",
+        "groomName": "{{$randomFullName}}",
+        "brideFather": "{{$randomFullName}}",
+        "brideMother": "{{$randomFullName}}",
+        "groomFather": "{{$randomFullName}}",
+        "groomMother": "{{$randomFullName}}",
+        "brideInstagram": "{{$randomUserName}}",
+        "groomInstagram": "{{$randomUserName}}",
+        "songTitle": "Perfect",
+        "songUrl": "https://example.com/perfect.mp3",
+        "street": "Jl. Melati No. 10",
+        "village": "Sekaran",
+        "district": "Gunungpati",
+        "city": "Semarang",
+        "province": "Jawa Tengah",
+        "quote": "Dan di antara tanda-tanda kekuasaan-Nya...",
+        "startTime": "2026-12-20T09:00:00+07:00",
+        "endTime": "2026-12-20T13:00:00+07:00",
+        "timezone": "Asia/Jakarta",
+        "gmapsUrl": "https://maps.google.com/?q=-7.05,110.40",
+        "youtubeUrl": "https://youtube.com/watch?v=xxxx",
+        "calendarUrl": "https://calendar.google.com/event?eid=xxxx",
+        "dresscode": "Earth tone",
+        "status": "draft"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

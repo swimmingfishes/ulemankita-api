@@ -1,14 +1,14 @@
 info:
-  name: Get One ID copy
+  name: Update One Wedding copy
   type: http
   seq: 5
 
 http:
   method: DELETE
-  url: "{{BASE_URL}}/admin/orders/:id"
+  url: "{{BASE_URL}}/admin/weddings/:id"
   params:
     - name: id
-      value: 3cf5927b-6c97-46c1-9130-62cd8227c21c
+      value: 65d88ad2-c2b7-4b57-aa21-7b94ad1859c0
       type: path
   auth: inherit
 

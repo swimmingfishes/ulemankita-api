@@ -1,0 +1,20 @@
+info:
+  name: Get One Weddings
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/customer/weddings/:id"
+  params:
+    - name: id
+      value: d1a78d15-3b33-423e-a277-7c4b796cbdc0
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,7 +1,7 @@
 info:
   name: Create Wedding
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
@@ -12,7 +12,7 @@ http:
       {
         "slug": "{{$randomBsNoun}}",
         "weddingDate": "2026-12-20T09:00:00+07:00",
-        "orderId": "f11fa4dc-b39f-4324-a0c1-69cfe28ba111",
+        "orderId": "45f4ee69-5462-45b4-b8a4-4c8821582393",
         "contactPhone": "{{$randomPhoneNumber}}",
         "brideName": "{{$randomFullName}}",
         "groomName": "{{$randomFullName}}",
